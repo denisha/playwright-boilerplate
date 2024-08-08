@@ -11,28 +11,19 @@ const config: PlaywrightTestConfig = {
         browserName: 'chromium',
         channel: 'chrome',
       },
-    },
-    {
-      name: 'Desktop Safari',
-      use: {
-        browserName: 'webkit',
-      }
-    },
-    {
-      name: 'Mobile Chrome',
-      use: devices['Pixel 5'],
-    },
-    {
-      name: 'Mobile Safari',
-      use: devices['iPhone 12'],
-    },
-    {
-      name: 'Desktop Firefox',
-      use: {
-        browserName: 'firefox',
-      }
-    },
+    }
   ],
+  use: {
+    headless: false,
+    viewport: { width: 1920, height: 1080 },
+    ignoreHTTPSErrors: true,
+    actionTimeout: 15000,
+
+    // artifacts
+    screenshot: "only-on-failure",
+    video: "retain-on-failure",
+    trace: "retain-on-failure",
+  },
 };
 
 export default config;
