@@ -3,6 +3,7 @@
 > Includes: Playwright, Playwright Test runner, TypeScript and Playwright Expect.
 
 ## Usage
+
 ```sh
 git clone https://github.com/elaichenkov/playwright-test-boilerplate.git
 
@@ -13,6 +14,6 @@ npm install
 npm test
 ```
 
-## Author
+## node
 
-Yevhen Laichenkov <elaichenkov@gmail.com>
+npm update npm -g
